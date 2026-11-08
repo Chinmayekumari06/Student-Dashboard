@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <h2>EduAnalytics</h2>
+
+            <nav>
+                <a href="#" class="active">Dashboard</a>
+                <a href="#statistics">Statistics</a>
+                <a href="#charts">Performance Charts</a>
+                <a href="#students">Students</a>
+            </nav>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <!-- HEADER -->
+            <header class="header">
+
+                <div>
+                    <h1>Student Performance Dashboard</h1>
+
+                    <p>
+                        Analyze student academic performance
+                        using real-world data.
+                    </p>
+                </div>
+
+                <div class="profile">
+                    Admin
+                </div>
+
+            </header>
+
+
+            <!-- STATISTICS SECTION -->
+            <section id="statistics">
+
+                <h2>Overview</h2>
+
+                <div class="stats-container">
+
+                    <div class="stat-card">
+                        <h3>Total Students</h3>
+                        <p id="total">Loading...</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Average Math Score</h3>
+                        <p id="math">Loading...</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Average Reading Score</h3>
+                        <p id="reading">Loading...</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <h3>Average Writing Score</h3>
+                        <p id="writing">Loading...</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CHARTS SECTION -->
+            <section id="charts">
+
+                <h2>Performance Analysis</h2>
+
+                <div class="charts-container">
+
+                    <div class="chart-card">
+
+                        <h3>Subject Performance</h3>
+
+                        <canvas id="subjectChart"></canvas>
+
+                    </div>
+
+                    <div class="chart-card">
+
+                        <h3>Gender Performance</h3>
+
+                        <canvas id="genderChart"></canvas>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- STUDENT TABLE SECTION -->
+           
+
+<!-- STUDENT TABLE SECTION -->
+
+<section id="students">
+
+    <h2>Student Records</h2>
+
+    <!-- Search and Filters -->
+    <div class="student-controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search students..."
+        >
+
+        <select id="genderFilter">
+            <option value="">All Genders</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+        </select>
+
+        <select id="courseFilter">
+            <option value="">All Preparation Courses</option>
+            <option value="completed">Completed</option>
+            <option value="none">None</option>
+        </select>
+
+    </div>
+
+    <!-- Student Table -->
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Gender</th>
+                    <th>Math Score</th>
+                    <th>Reading Score</th>
+                    <th>Writing Score</th>
+                    <th>Test Preparation</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable">
+
+                <tr>
+                    <td colspan="5">Loading students...</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+
+        <button id="prevBtn">Previous</button>
+
+        <span id="pageInfo">Page 1</span>
+
+        <button id="nextBtn">Next</button>
+
+    </div>
+
+</section>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
