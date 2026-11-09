@@ -77,3 +77,16 @@ Through this project, I gained practical experience in:
 Developed as part of my Computer Science learning journey.
 
 **Technologies:** HTML | CSS | JavaScript | Python | Flask
+
+
+## 📸 Project Screenshots
+
+### 1. Dashboard Overview
+![Dashboard Overview](screenshots/Dashboard-overview.png)
+
+### 2. Student Records
+![Student Records](screenshots/Students-records.png)
+
+### 3. Search, Filtering and Pagination
+![Filters and Pagination](screenshots/Filters-Pagination.png)
+
